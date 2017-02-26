@@ -9,23 +9,28 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header >
-    <h1 class="logo">baidu</h1>
-    <nav>
-      <ul>
-        <li><a href="#">导航链接1</a></li>
-        <li><a href="#">导航链接2</a></li>
-        <li><a href="#">导航链接3</a></li>
-        <li><a href="#">导航链接4</a></li>
-      </ul>
-    </nav>
+  <header id="header">
+    <div class="center">
+      <h1 class="logo">baidu</h1>
+      <nav class="link">
+        <h2 class="none">网站导航</h2>
+        <ul>
+          <li><a href="#">导航链接1</a></li>
+          <li><a href="#">导航链接2</a></li>
+          <li><a href="#">导航链接3</a></li>
+          <li><a href="#">导航链接4</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <div>
-    <hgroup>
-      <h2>牢记嘱托 一本规划绘好北京新蓝图</h2>
-      <h3>习近平北京考察回访</h3>
-    </hgroup>
-    <p>时政新闻 央视新闻客户端 2017-02-26 21:58</p>
+  <div class="container">
+    <article class="article">
+      <hgroup>
+        <h2>牢记嘱托 一本规划绘好北京新蓝图</h2>
+        <h3>习近平北京考察回访</h3>
+      </hgroup>
+      <p class="source">时政新闻 央视新闻客户端 2017-02-26 21:58</p>
+    </article>
     <p>
       24、25日两天，习近平总书记在北京考察城市规划建设和北京冬奥会筹办工作，强调要立足
       提高治理能力抓好城市规划建设，着眼精彩、非凡、卓越筹办好北京冬奥会。首都建设者们备
@@ -38,12 +43,14 @@
       北京建工新机场项目党群干事张一佳：总书记深入一线来看我们，觉得特别暖心。
     </p>
   </div>
-  <div>
-    <hgroup>
-      <h2>牢记嘱托 一本规划绘好北京新蓝图</h2>
-      <h3>习近平北京考察回访</h3>
-    </hgroup>
-    <p>时政新闻 央视新闻客户端 2017-02-26 21:58</p>
+  <div class="container">
+    <article class="article">
+      <hgroup>
+        <h2>牢记嘱托 一本规划绘好北京新蓝图</h2>
+        <h3>习近平北京考察回访</h3>
+      </hgroup>
+      <p class="source">时政新闻 央视新闻客户端 2017-02-26 21:58</p>
+    </article>
     <p>
       24、25日两天，习近平总书记在北京考察城市规划建设和北京冬奥会筹办工作，强调要立足
       提高治理能力抓好城市规划建设，着眼精彩、非凡、卓越筹办好北京冬奥会。首都建设者们备
@@ -57,7 +64,7 @@
       <li>列表项目</li>
     </ul>
   </div>
-  <div>
+  <div class="container">
     <h2>图片</h2>
     <figure>
       <figcaption>图片描述</figcaption>
@@ -72,18 +79,20 @@
       <img src="http://inews.gtimg.com/newsapp_bt/0/1187407163/641" alt="">
     </figure>
   </div>
-  <div>
-    <hgroup>
-      <h2>牢记嘱托 一本规划绘好北京新蓝图</h2>
-      <h3>习近平北京考察回访</h3>
-    </hgroup>
-    <p>时政新闻 央视新闻客户端 2017-02-26 21:58</p>
+  <div class="container">
+    <article class="article">
+      <hgroup>
+        <h2>牢记嘱托 一本规划绘好北京新蓝图</h2>
+        <h3>习近平北京考察回访</h3>
+      </hgroup>
+      <p class="source">时政新闻 央视新闻客户端 2017-02-26 21:58</p>
+    </article>
     <ol>
       <li>列表项目</li>
       <li>列表项目</li>
       <li>列表项目</li>
     </ol>
-    <table border="1px">
+    <table>
       <caption>表格标题</caption>
       <thead>
         <tr>
@@ -122,38 +131,75 @@
       </tfoot>
     </table>
   </div>
-  <div>
+  <div class="container">
     <h2>标题</h2>
     <form action="#">
-      请输入邮箱地址：<input type="text" value="这是一个文本输入框">
-      <span>邮箱地址请按要求格式输入</span>
-      请输入密码：<input type="password">
-      请再次输入密码：<input type="password">
-      <span>密码请为6-16位英文数字</span>
-      性别：
-      <input type="radio" name="sex" value="male" checked>男
-      <input type="radio" name="sex" value="female">女
-      城市:
-      <select class="" name="city">
-        <option value="">北京</option>
-        <option value="">上海</option>
-        <option value="">广州</option>
-        <option value="">深圳</option>
-      </select>
+      <table id="form-table">
+        <tbody>
+          <tr>
+            <td class="fr">请输入邮箱地址：</td>
+            <td><input type="text" value="这是一个文本输入框"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="tips">邮箱地址请按要求格式输入</span></td>
+          </tr>
+          <tr>
+            <td class="fr">请输入密码：</td>
+            <td><input type="password"></td>
+          </tr>
+          <tr>
+            <td class="fr">请再次输入密码：</td>
+            <td><input type="password"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span  class="tips">密码请为6-16位英文数字</span></td>
+          </tr>
+          <tr>
+            <td class="fr">性别：</td>
+            <td>
+              <input type="radio" name="sex" value="male" checked>男
+              <input type="radio" name="sex" value="female">女
+            </td>
+          </tr>
+          <tr>
+            <td class="fr">城市: </td>
+            <td>
+              <select class="" name="city">
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">广州</option>
+                <option value="">深圳</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="fr">爱好: </td>
+            <td>
+              <input type="checkbox" name="hobby" value="">运动
+              <input type="checkbox" name="hobby" value="">艺术
+              <input type="checkbox" name="hobby" value="">科学
+            </td>
+          </tr>
+          <tr>
+            <td class="fr">个人描述: </td>
+            <td>
+              <textarea name="name" rows="4" cols="50">
+                输入框输入框输入框输入框
+              </textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-      爱好:
-      <input type="checkbox" name="hobby" value=""> 运动
-      <input type="checkbox" name="hobby" value="">艺术
-      <input type="checkbox" name="hobby" value="">科学
-      个人描述:
-      <textarea name="name" rows="4" cols="10">
-        输入框输入框输入框输入框
-      </textarea>
       <input type="submit" name="" value="提交">
     </form>
   </div>
-  <footer>
-    版权所有&copy;
+  <footer class="footer">
+    <div class="web-info">
+      <span>版权所有&copy;</span>
+    </div>
   </footer>
 </body>
 </html>

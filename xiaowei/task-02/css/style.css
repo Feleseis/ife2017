@@ -1,0 +1,152 @@
+.none {
+  display: none;
+}
+
+body {
+  background: #ccc;
+}
+
+#header {
+  height: 80px;
+  background: #272822;
+}
+
+#header .center {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#header .none {
+
+}
+
+#header .logo {
+  width: 122px;
+  height: 60px;
+  background: url("https://static.zhihu.com/static/revved/img/sticky_header/new_logo@2x.9187366b.png") no-repeat;
+  text-indent: -999px;
+  margin: 10px;
+  float: left;
+}
+
+#header .link {
+  float: right;
+}
+
+#header .link ul li {
+  display: inline-block;
+  line-height: 80px;
+  padding-left: 20px;
+}
+
+#header .link ul li a {
+  color: #ccc;
+
+}
+
+.container {
+  width: 980px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 3px 3px 2px #666;
+  box-shadow: 3px 3px 2px #666;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.container .article h3 {
+  color: #666;
+}
+
+.container .source {
+  color: #aaa;
+}
+
+.container > p {
+  text-indent: 20px;
+}
+
+.container > p a {
+  color: #0f0;
+}
+
+.container figure {
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #eee;
+
+}
+
+.container figure figcaption {
+  margin: 10px auto;
+}
+
+.container figure img {
+
+  width: 240px;
+}
+
+.container ol li {
+  line-height: 2em;
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.container table th {
+  background: #333;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+.container table td {
+  border: 1px solid #ccc;
+}
+
+.container table tfoot {
+  background: #ccc;
+}
+
+.container form .tips {
+  color: #999;
+}
+
+
+.container input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background: #20b5f5;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#form-table, #form-table td {
+  border: 0;
+}
+
+#form-table td {
+  padding: 5px;
+}
+
+.footer {
+  height: 80px;
+  background: #272822;
+}
+
+.footer .web-info {
+  width: 980px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer .web-info span {
+  color: #eee;
+}
