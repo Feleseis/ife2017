@@ -132,66 +132,52 @@
     </table>
   </div>
   <div class="container">
-    <h2>标题</h2>
+    <blockquote>标题</blockquote>
     <form action="#">
-      <table id="form-table">
-        <tbody>
-          <tr>
-            <td class="fr">请输入邮箱地址：</td>
-            <td><input type="text" value="这是一个文本输入框"></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><span class="tips">邮箱地址请按要求格式输入</span></td>
-          </tr>
-          <tr>
-            <td class="fr">请输入密码：</td>
-            <td><input type="password"></td>
-          </tr>
-          <tr>
-            <td class="fr">请再次输入密码：</td>
-            <td><input type="password"></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><span  class="tips">密码请为6-16位英文数字</span></td>
-          </tr>
-          <tr>
-            <td class="fr">性别：</td>
-            <td>
-              <input type="radio" name="sex" value="male" checked>男
-              <input type="radio" name="sex" value="female">女
-            </td>
-          </tr>
-          <tr>
-            <td class="fr">城市: </td>
-            <td>
-              <select class="" name="city">
-                <option value="">北京</option>
-                <option value="">上海</option>
-                <option value="">广州</option>
-                <option value="">深圳</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="fr">爱好: </td>
-            <td>
-              <input type="checkbox" name="hobby" value="">运动
-              <input type="checkbox" name="hobby" value="">艺术
-              <input type="checkbox" name="hobby" value="">科学
-            </td>
-          </tr>
-          <tr>
-            <td class="fr">个人描述: </td>
-            <td>
-              <textarea name="name" rows="4" cols="50">
-                输入框输入框输入框输入框
-              </textarea>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="form-group">
+                <label class="control-label">请输入邮箱地址</label>
+                <input name="email" placeholder="这是一个文本输入框" type="email">
+                <div class="form-tip control-label-offset">邮箱地址请按要求格式输入</div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">请输入密码</label>
+                <input name="password1" pattern="[A-Za-z0-9]{6,16}" placeholder="这是一个密码输入框"
+                       id="form-password" type="password">
+            </div>
+            <div class="form-group">
+                <label class="control-label">请重复输入密码</label>
+                <input name="password2" pattern="[A-Za-z0-9]{6,16}" placeholder="这是一个密码输入框"
+                       id="form-password-confirm" type="password">
+                <div class="form-tip control-label-offset">密码为6-16位英文数字</div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">性别</label>
+                <label class="form-control"><input type="radio" name="gender" value="male" checked>男</label>
+                <label class="form-control"><input type="radio" name="gender" value="female">女</label>
+            </div>
+            <div class="form-group">
+                <label class="control-label">城市</label>
+                <select name="city" class="form-control">
+                    <option value="beijing">北京</option>
+                    <option value="shanghai">上海</option>
+                    <option value="guangzhou">广州</option>
+                    <option value="shenzheng">深圳</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">爱好</label>
+                <div class="form-control">
+                    <label><input type="checkbox" name="hobby" value="sport">运动</label>
+                    <label><input type="checkbox" name="hobby" value="art">艺术</label>
+                    <label><input type="checkbox" name="hobby" value="science">科学</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">个人描述</label>
+                <div class="form-control" style="width: 60%">
+                    <textarea name="desc" rows="5" placeholder="输入您的个人描述"></textarea>
+                </div>
+            </div>
 
       <input type="submit" name="" value="提交">
     </form>

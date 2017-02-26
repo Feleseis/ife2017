@@ -128,13 +128,44 @@ body {
   margin: 5px;
 }
 
-#form-table, #form-table td {
-  border: 0;
+.container blockquote {
+  border-left: 3px solid #ddd;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
-#form-table td {
-  padding: 5px;
+.container .form-group {
+  margin: 0 0 10px 0;
 }
+
+.container .form-control {
+  display: inline-block;
+}
+
+.container .form-control textarea {
+  width: 100%;
+}
+
+.container .form-group .control-label {
+  width: 35%;
+  text-align: right;
+  padding: 0 10px 0 0;
+
+}
+
+.container .form-group label {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.container .form-group .control-label-offset {
+  margin-left: 35%;
+  color: #ddd;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+
 
 .footer {
   height: 80px;
