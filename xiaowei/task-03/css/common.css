@@ -19,6 +19,22 @@ a {
   box-sizing: border-box;
 }
 
+.pos {
+  position: relative;
+}
+
+.poa {
+  position: absolute;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
 .cf:after, .cf:before {
   content: "";
   display: block;

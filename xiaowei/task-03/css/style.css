@@ -1,0 +1,53 @@
+/*浮动*/
+.container {
+  min-width: 600px;
+  margin: 20px;
+  background: #eee;
+  border: 1px solid #999;
+  padding: 20px;
+}
+
+.container img {
+  width: 80px;
+  height: 80px;
+}
+
+.container .team-info {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #999;
+  background: #fff;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container .intrduction {
+  width: auto;
+  margin: 0;
+  padding: 0 160px 0 220px;
+}
+
+.container .intrduction article {
+  background: #fff;
+  border: 1px solid #999;
+  padding: 20px;
+}
+
+.container .number-info {
+  width: 120px;
+  border: 1px solid #999;
+  background: #fff;
+  padding: 20px;
+  float: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container .number-info .fl {
+  float: left;
+}
+
+.container .number-info .fr {
+  float: right;
+}
