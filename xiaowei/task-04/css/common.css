@@ -1,0 +1,42 @@
+/*normallize*/
+body, ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*common*/
+.msbox {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pos {
+  position: relative;
+}
+
+.poa {
+  position: absolute;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cf:after, .cf:before {
+  content: "";
+  display: block;
+  clear: both;
+}
