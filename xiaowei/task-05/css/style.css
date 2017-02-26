@@ -1,0 +1,201 @@
+.none {
+  display: none;
+}
+
+body {
+  background: #ccc;
+}
+
+#header {
+  height: 80px;
+  background: #272822;
+  margin: 0 0 20px 0;
+}
+
+#header .center {
+  width: 100%;
+}
+
+#header .none {
+
+}
+
+#header .logo {
+  width: 122px;
+  height: 60px;
+  background: url("https://static.zhihu.com/static/revved/img/sticky_header/new_logo@2x.9187366b.png") no-repeat;
+  text-indent: -999px;
+  margin: 10px 10px 10px 50px;
+  float: left;
+}
+
+#header .link {
+  float: right;
+  margin: 0 50px 0 0;
+}
+
+#header .link ul li {
+  display: inline-block;
+  line-height: 80px;
+  padding-left: 20px;
+}
+
+#header .link ul li a {
+  color: #ccc;
+
+}
+
+#container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#container .content {
+  /*float: left;*/
+  margin: 0 450px 20px 20px;
+}
+
+#container .content .section {
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 3px 3px 2px #666;
+  box-shadow: 3px 3px 2px #666;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#container .content .section .article h3 {
+  color: #666;
+}
+
+#container .content .section .source {
+  color: #aaa;
+}
+
+#container .content .section > p {
+  text-indent: 20px;
+}
+
+#container .content .section > p a {
+  color: #0f0;
+}
+
+#container .content .section figure {
+  width: 220px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #eee;
+  display: inline-block;
+}
+
+#container .content .section figure figcaption {
+  margin: 10px auto;
+}
+
+#container .content .section figure img {
+  width: 200px;
+}
+
+#container .content .section ol li {
+  line-height: 2em;
+}
+
+#container .content .section table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+#container .content .section table th {
+  background: #333;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+#container .content .section table td {
+  border: 1px solid #ccc;
+}
+
+#container .content .section table tfoot {
+  background: #ccc;
+}
+
+#container .side {
+  float: right;
+  width: 400px;
+  margin: 0 20px 0 0;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 15px;
+  -webkit-box-shadow: 3px 3px 2px #666;
+  box-shadow: 3px 3px 2px #666;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#container .side form .tips {
+  color: #999;
+}
+
+
+#container .side input[type="submit"] {
+  width: 100%;
+  height: 25px;
+  color: #fff;
+  background: #20b5f5;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#container .side blockquote {
+  border-left: 3px solid #ddd;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+#container .side .form-group {
+  margin: 0 0 20px 0;
+}
+
+#container .side .form-control {
+  display: inline-block;
+}
+
+#container .side .form-control textarea {
+  width: 100%;
+}
+
+#container .side .form-group .control-label {
+  width: 35%;
+  text-align: right;
+  padding: 0 10px 0 0;
+
+}
+
+#container .side .form-group label {
+  display: inline-block;
+  max-width: 100%;
+}
+
+#container .side .form-group .control-label-offset {
+  margin-left: 35%;
+  color: #ddd;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+
+
+#footer {
+  height: 50px;
+  line-height: 50px;
+  background: #272822;
+  color: #eee;
+  text-align: center;
+  clear: both;
+}
