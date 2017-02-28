@@ -9,9 +9,9 @@ window.onload = function() {
   oLin.onclick = function() {
     if (getInput()) {
       if (oShow.childElementCount) {
-        oShow.appendChild(newdiv(getInput()));
-      } else {
         oShow.insertBefore(newdiv(getInput()),oShow.firstElementChild);
+      } else {
+        oShow.appendChild(newdiv(getInput()));
       }
     }
   };
