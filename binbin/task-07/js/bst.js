@@ -76,7 +76,10 @@ function preOrder(node) {
 // }
 function postOrder(node) {
   if (!(node == null)) {
-    node.show().className = '';    
+    var obj = document.querySelectorAll('div');
+    for (var i = 0; i < obj.length; i++) {
+      obj[i].className = '';
+    }
     setTimeout(function() {
       postOrder(node._left);
       postOrder(node._right);
