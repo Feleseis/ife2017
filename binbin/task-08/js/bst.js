@@ -4,14 +4,15 @@ function Node(data, left, right) {
   this._left = left;
   this._right = right;
   this.show = show;
+  // this.getStr = getStr;
 }
 function show() {
-  // console.log(this._data);
-  // this._data.className = 'select';
   return this._data;
 }
 
-
+// function getStr() {
+//   return this._data.show().innerText.split('\n')[0];
+// }
 
 function BST() {
   this._root = null;
@@ -24,6 +25,7 @@ function BST() {
   this.findData = findData;
   this.remove = remove;
   this.update = update;
+  this.postOrderFind = postOrderFind;
 }
 function insert(data) {
   var nNode = new Node(data, null, null);
@@ -50,8 +52,6 @@ function insert(data) {
     }
   }
 }
-
-
 function inOrder(node) {
   if (!(node == null)) {
     inOrder(node._left);
@@ -84,9 +84,29 @@ function postOrder(node) {
       postOrder(node._left);
       postOrder(node._right);
       node.show().className = 'select';
-    },100);
+    },200);
   }
 }
+function postOrderFind(node, str) {
+  var obj = document.querySelectorAll('div');
+  for (var i = 0; i < obj.length; i++) {
+    obj[i].className = '';
+  }
+  if (!(node == null)) {
+    setTimeout(function() {
+      if (str == node.show().innerText.split('\n')[0]) {
+      node.show().className = 'select2';
+    } else {
+      postOrderFind(node._left, str);
+      postOrderFind(node._right, str);
+      node.show().className = 'select';
+    }
+    },200);
+  }
+}
+
+
+
 function getMinData() {
   var nCurrent = this._root;
   while (!(nCurrent._left == null)) {
@@ -132,6 +152,7 @@ function findData(data) {
   }
   return null;
 }
+
 function remove(data) {
   this._root = removeNode(this._root, data);
 }

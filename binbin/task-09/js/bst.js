@@ -6,11 +6,11 @@ function Node(data, left, right) {
   this.show = show;
 }
 function show() {
-  // console.log(this._data);
-  // this._data.className = 'select';
+  console.log(this._data.index);
+  // // console.log(typeof this._data);
+  // console.log('-------------------------');
   return this._data;
 }
-
 
 
 function BST() {
@@ -50,12 +50,11 @@ function insert(data) {
     }
   }
 }
-
-
 function inOrder(node) {
   if (!(node == null)) {
     inOrder(node._left);
-    console.log(node.show() + ' ');
+    // console.log(node.show().indrx);
+    node.show();
     inOrder(node._right);
   }
 }
@@ -66,27 +65,16 @@ function preOrder(node) {
     preOrder(node._right);
   }
 }
-// function postOrder(node) {
-//   if (!(node == null)) {
-//     postOrder(node._left);
-//     postOrder(node._right);
-//     console.log(node.show() + ' ');
-//     setTimeout(node.show,1000);
-//   }
-// }
 function postOrder(node) {
-  var obj = document.querySelectorAll('div');
-  for (var i = 0; i < obj.length; i++) {
-    obj[i].className = '';
-  }
   if (!(node == null)) {
-    setTimeout(function() {
-      postOrder(node._left);
-      postOrder(node._right);
-      node.show().className = 'select';
-    },100);
+    postOrder(node._left);
+    postOrder(node._right);
+    console.log(node.show() + ' ');
+    setTimeout(node.show,1000);
   }
 }
+
+
 function getMinData() {
   var nCurrent = this._root;
   while (!(nCurrent._left == null)) {
@@ -132,6 +120,7 @@ function findData(data) {
   }
   return null;
 }
+
 function remove(data) {
   this._root = removeNode(this._root, data);
 }
@@ -139,7 +128,10 @@ function removeNode(node, data) {
   if (node == null) {
     return null;
   }
-  if (data == node._data) {
+  // console.log('-------'+ data.index + '------------');
+  // console.log('-------'+ node._data.index + '------------');
+  if (data.index == node._data.index) {
+    console.log('++++++++++++++');
     //没有子节点的节点
     if (node._left == null && node._right == null) {
       return null;
