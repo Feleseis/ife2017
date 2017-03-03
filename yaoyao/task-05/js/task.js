@@ -29,9 +29,69 @@ window.onload = function() {
       case 'tb':
         turnBox(180);
         break;
+      case 'ml':
+        moveLeft();
+        break;
+      case 'mr':
+        moveRight();
+        break;
+      case 'mt':
+        moveUp();
+        break;
+      case 'mb':
+        moveDown();
+        break;
+      case 'tmt':
+        if (getNEWS() == 1) {
+          turnAndMove(0, moveUp);
+        } else if (getNEWS() == 2) {
+          turnAndMove(-90, moveUp);
+        } else if (getNEWS() == 3) {
+          turnAndMove(180, moveUp);
+        } else if (getNEWS() == 4) {
+          turnAndMove(90, moveUp);
+        }
+        break;
+      case 'tmb':
+        if (getNEWS() == 1) {
+          turnAndMove(180, moveDown);
+        } else if (getNEWS() == 2) {
+          turnAndMove(90, moveDown);
+        } else if (getNEWS() == 3) {
+          turnAndMove(0, moveDown);
+        } else if (getNEWS() == 4) {
+          turnAndMove(-90, moveDown);
+        }
+        break;
+      case 'tmr':
+        if (getNEWS() == 1) {
+          turnAndMove(90, moveRight);
+        } else if (getNEWS() == 2) {
+          turnAndMove(0, moveRight);
+        } else if (getNEWS() == 3) {
+          turnAndMove(-90, moveRight);
+        } else if (getNEWS() == 4) {
+          turnAndMove(180, moveRight);
+        }
+        break;
+      case 'tml':
+        if (getNEWS() == 1) {
+          turnAndMove(-90, moveLeft);
+        } else if (getNEWS() == 2) {
+          turnAndMove(180, moveLeft);
+        } else if (getNEWS() == 3) {
+          turnAndMove(90, moveLeft);
+        } else if (getNEWS() == 4) {
+          turnAndMove(0, moveLeft);
+        }
+        break;
     }
   };
 
+  function turnAndMove(deg, fn) {
+    turnBox(deg);
+    fn();
+  }
 
   function moveUp() {
     if (iMarginTop > -250) {
