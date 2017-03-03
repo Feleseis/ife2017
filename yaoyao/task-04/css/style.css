@@ -1,0 +1,55 @@
+div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#box {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #f00;
+  position: absolute;
+  transition: all 1s;
+  top: 50%;
+  left: 50%;
+  transform: rotate(90deg);
+
+  /*margin: -250px 0 0 -250px;*/
+}
+
+#box:hover {
+  /*transform: rotate(180deg);*/
+}
+
+#blue {
+  width: 50px;
+  height: 10px;
+  background: #00f;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:stretch;
+  border: 2px solid #f00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+}
+
+.row {
+  display: flex;
+  justify-content:space-around;
+  align-items:stretch;
+}
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  /*float: left;*/
+  /*display: inline-block;*/
+}
