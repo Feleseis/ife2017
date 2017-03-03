@@ -1,0 +1,21 @@
+input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin: 0 20px;
+}
+
+button {
+  color: #fff;
+  border: 1px solid #355ef1;
+  background: #4c7cdb;
+  border-radius: 3px;
+}
+
+span {
+  font-size: 14px;
+  margin: 0 0 0 80px;
+  color: #666;
+}
