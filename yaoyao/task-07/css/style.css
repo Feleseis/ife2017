@@ -1,0 +1,43 @@
+/*table {
+  width: 500px;
+  border-collapse: collapse;
+}
+
+thead {
+  color: #fff;
+  background: #272822;
+}
+
+table td {
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+table th {
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.sort {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin: 0 10px 0 0;
+}
+
+.sort-up, .sort-dn {
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+}
+
+.sort-up {
+  border-bottom: 4px solid #fff;
+}
+
+.sort-dn {
+  border-top: 4px solid #fff;
+  margin: 3px 0 0 0;
+}*/
