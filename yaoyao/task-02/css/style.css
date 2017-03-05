@@ -8,10 +8,13 @@ form {
 }
 
 input {
-  border-style: none;
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 3px;
+}
+
+input:focus {
+  outline-style: none;
 }
 
 #btn {
